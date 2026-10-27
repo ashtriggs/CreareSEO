@@ -3,7 +3,7 @@
 class Creare_CreareSeoCore_Adminhtml_CreareseoController extends Mage_Adminhtml_Controller_Action
 {
 
-	protected function _isAllowed()
+	protected function _isAllowed(): bool
 	{
 		return Mage::getSingleton('admin/session')->isAllowed('system/creareseo/defaultseo');
 	}
